@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, TextField } from '@mui/material';
 
 
-const ContactForm = () => {
+const Contact = () => {
   return (
     <form noValidate autoComplete="off">
       <TextField label="Name" fullWidth margin="normal" />
@@ -15,4 +15,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default Contact;
