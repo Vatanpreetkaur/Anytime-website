@@ -22,7 +22,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('/contacts', formData);
+      const response = await axios.post('http://localhost:8000/contacts', formData); // Updated API endpoint
       console.log('Contact saved:', response.data);
       setFormData({
         contact_fullname: '',
