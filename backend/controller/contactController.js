@@ -20,6 +20,7 @@ exports.createContact = async (req, res) => {
   try {
     const savedContact = await newContact.save();
     res.status(201).json(savedContact);
+    alert("contact saved and email sent")
   } catch (error) {
     res.status(400).json({ message: error.message });
     console/log("error:", error.message)
