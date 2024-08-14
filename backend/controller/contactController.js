@@ -23,6 +23,6 @@ exports.createContact = async (req, res) => {
     alert("contact saved and email sent")
   } catch (error) {
     res.status(400).json({ message: error.message });
-    console/log("error:", error.message)
+    console.log("error:", error.message)
   }
 };
