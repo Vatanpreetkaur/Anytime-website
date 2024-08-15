@@ -24,7 +24,7 @@
 
 // src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import HomePage from './Pages/Home';
 import Header from './components/Header';
@@ -33,14 +33,17 @@ import Footer from './components/Footer';
 
 const App = () => (
   <Router>
-    <Header />
     
+    <Header />
+    <Routes>
       <Route exact path="/" component={HomePage} />
+      </Routes>
       {/* <Route path="/about" component={About} />
       <Route path="/services" component={Services} />
       <Route path="/contact" component={Contact} /> */}
    
     <Footer />
+   
   </Router>
 );
 
