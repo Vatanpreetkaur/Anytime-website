@@ -11,6 +11,7 @@ import About from './components/About';
 
 const App = () => (
   <Router>
+    
     <Header />
     <Routes>
       <Route path="/" element={<HomePage />} />
@@ -21,6 +22,7 @@ const App = () => (
       <Route path="/services" element={<Services />} />
     </Routes>
     <Footer />
+   
   </Router>
 );
 

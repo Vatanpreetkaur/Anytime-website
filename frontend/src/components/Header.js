@@ -22,10 +22,10 @@ const Header = () => {
           <Typography variant="h6" style={{ flexGrow: 1 }}>
             Anytime Dock & Door Ltd.
           </Typography>
-          <Button color="inherit" component={Link} to="/">Home</Button>
-          <Button color="inherit" component={Link} to="/about">About Us</Button>
-          <Button color="inherit" component={Link} to="/services">Services</Button>
-          <Button color="inherit" component={Link} to="/contact">Contact</Button>
+          <Button color="inherit" sx={{display:{xs:'none' ,sm:"block"}}} component={Link} to="/">Home</Button>
+          <Button color="inherit" sx={{display:{xs:'none' ,sm:"block"}}}component={Link} to="/about">About</Button>
+          <Button color="inherit"sx={{display:{xs:'none' ,sm:"block"}}} component={Link} to="/services">Services</Button>
+          <Button color="inherit"sx={{display:{xs:'none' ,sm:"block"}}} component={Link} to="/contact">Contact</Button>
         </Toolbar>
       </AppBar>
       <Drawer anchor="left" open={drawerOpen} onClose={toggleDrawer(false)}>
