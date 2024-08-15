@@ -1,6 +1,7 @@
 
 // controllers/contactController.js
 const ContactDetail = require("../models/contactForm");
+const sendEmail = require('../utils/mailer');
 
 exports.createContact = async (req, res) => {
   const { contact_fullname, contact_email, contact_message,contact_type,
@@ -19,8 +20,9 @@ exports.createContact = async (req, res) => {
 
   try {
     const savedContact = await newContact.save();
+    await sendEmail(req.body); 
+    console.log('Email sent successfully');
     res.status(201).json(savedContact);
-    alert("contact saved and email sent")
   } catch (error) {
     res.status(400).json({ message: error.message });
     console.log("error:", error.message)

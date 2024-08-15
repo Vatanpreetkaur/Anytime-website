@@ -28,10 +28,9 @@ const sendEmail = async (formData) => {
   try {
     await transporter.sendMail(mailOptions);
     console.log('Email sent successfully');
-    alert("emil sent")
+    
   } catch (error) {
     console.error('Error sending email:', error);
-    alert("error sending email");
     throw error; 
   }
 };
