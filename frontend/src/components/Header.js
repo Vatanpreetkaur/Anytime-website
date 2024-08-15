@@ -4,6 +4,7 @@ import { AppBar, Toolbar, Typography, Button, IconButton, Drawer, List, ListItem
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
 
+
 const Header = () => {
   const [drawerOpen, setDrawerOpen] = React.useState(false);
 
@@ -19,7 +20,7 @@ const Header = () => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" style={{ flexGrow: 1 }}>
-            Dock & Door Company
+            Anytime Dock & Door Ltd.
           </Typography>
           <Button color="inherit" sx={{display:{xs:'none' ,sm:"block"}}} component={Link} to="/">Home</Button>
           <Button color="inherit" sx={{display:{xs:'none' ,sm:"block"}}}component={Link} to="/about">About</Button>
@@ -29,7 +30,7 @@ const Header = () => {
       </AppBar>
       <Drawer anchor="left" open={drawerOpen} onClose={toggleDrawer(false)}>
         <List>
-          <ListItem button component={Link} to="/" onClick={toggleDrawer(false)}>
+          <ListItem  component={Link} to="/Home" onClick={toggleDrawer(false)}>
             <ListItemText primary="Home" />
           </ListItem>
           <ListItem button component={Link} to="/about" onClick={toggleDrawer(false)}>
