@@ -44,10 +44,16 @@ const About = () => {
       </Typography>
       <Box mb={4}>
         <Typography variant="h6" component="h2" align="center" paragraph>
-          At Dock & Door Company, we are dedicated to providing high-quality door and dock solutions. With years of experience, our team is committed to delivering exceptional service and ensuring customer satisfaction.
-        </Typography>
+        Anytime Dock and Door: Exceptional Repair and Maintenance Solutions for Your Business and Home
+At Anytime Dock and Door, we deliver unparalleled repair and maintenance services designed to keep your residential and commercial properties running smoothly. Our company is dedicated to providing swift, high-quality solutions for all your dock and door needs, ensuring minimal disruption to your operations and daily life.
+</Typography>
         <Typography variant="body1" align="center">
-          Our mission is to offer reliable and efficient installation, repair, and maintenance services for all types of doors and docks. We take pride in our work and strive to exceed our clients' expectations with every project.
+        Why We Stand Out:
+* 24/7 Availability: We offer around-the-clock emergency services, ensuring you have immediate access to expert help whenever you need it.
+* Highly Skilled Professionals: Our team consists of certified technicians with extensive experience in both residential and commercial systems, guaranteeing precision and reliability in every job.
+* Comprehensive Maintenance Programs: We provide proactive maintenance solutions tailored to your specific requirements, reducing the risk of unexpected issues and extending the lifespan of your equipment.
+* Commitment to Excellence: We pride ourselves on delivering exceptional service with a focus on quality, safety, and customer satisfaction.
+Choose Anytime Dock and Door for a partner who understands the importance of reliability and efficiency in your operations. Our dedicated team is here to ensure that your docks and doors are always in optimal condition, allowing you to focus on what matters most.
         </Typography>
       </Box>
 
