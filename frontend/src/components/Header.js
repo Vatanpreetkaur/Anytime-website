@@ -1,8 +1,27 @@
 // src/components/Header.js
 import React from 'react';
-import { AppBar, Toolbar, Typography, Button, IconButton, Drawer, List, ListItem, ListItemText } from '@mui/material';
+import { AppBar, Toolbar, Typography, Button, IconButton, Drawer, List, ListItem, ListItemText, Box } from '@mui/material';
+import { styled } from '@mui/system';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
+
+// const TopBar = styled(AppBar)({
+//   backgroundColor: '#000', // You can change this color as needed
+//   color: '#fff',
+//   padding: '0.5rem 1rem',
+//   position: 'relative',
+// });
+
+// const TopBarContent = styled(Box)({
+//   display: 'flex',
+//   justifyContent: 'space-between',
+//   alignItems: 'center',
+// });
+
+// const PhoneNumber = styled(Typography)({
+//   fontSize: '1rem',
+// });
+
 
 
 const Header = () => {
@@ -14,6 +33,20 @@ const Header = () => {
 
   return (
     <>
+      {/* <TopBar position="static">
+        <Toolbar>
+          <TopBarContent>
+          <Box display="flex" >
+          <PhoneNumber>(800) 929-3667</PhoneNumber>
+          <Button variant="contained" color="secondary" href="#contact">
+              Get a Quote
+            </Button>
+        </Box>
+            
+          </TopBarContent>
+        </Toolbar>
+      </TopBar> */}
+
       <AppBar position="static">
         <Toolbar>
           <IconButton edge="start" color="inherit" aria-label="menu" onClick={toggleDrawer(true)}>

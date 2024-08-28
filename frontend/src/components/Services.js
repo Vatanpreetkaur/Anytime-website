@@ -701,7 +701,6 @@ import { Grid, Paper, Typography, Box, List, ListItem, ListItemIcon, ListItemTex
 import HomeIcon from '@mui/icons-material/Home';
 import BuildIcon from '@mui/icons-material/Build';
 import DoorFrontIcon from '@mui/icons-material/DoorFront';
-import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import PestControlIcon from '@mui/icons-material/PestControl';
 import SecurityIcon from '@mui/icons-material/Security';
 import CloseIcon from '@mui/icons-material/Close';
