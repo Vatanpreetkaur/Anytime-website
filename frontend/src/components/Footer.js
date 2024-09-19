@@ -50,16 +50,16 @@ const Footer = () => (
 
       {/* Social Media Icons */}
       <Stack direction="row" justifyContent="center" spacing={2}>
-        <IconButton href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+        <IconButton href="https://www.facebook.com/profile.php?id=61550970171086&mibextid=LQQJ4d" target="_blank" aria-label="Facebook">
           <FacebookIcon sx={{ color: 'white' }} />
         </IconButton>
-        <IconButton href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+        <IconButton href="https://www.instagram.com/anytimedockanddoor?igsh=aThkbXl6ZGtwM2Ry&utm_source=qr" target="_blank" aria-label="Instagram">
           <InstagramIcon sx={{ color: 'white' }} />
         </IconButton>
-        <IconButton href="mailto:Anytimedockdoor@gmail.com" aria-label="Email">
+        <IconButton href="mailto:anytimedockanddoor@gmail.com" aria-label="Email">
           <EmailIcon sx={{ color: 'white' }} />
         </IconButton>
-        <IconButton href="tel:6043639263" aria-label="Phone">
+        <IconButton href="tel:+16043639263" aria-label="Phone">
           <PhoneIcon sx={{ color: 'white' }} />
         </IconButton>
       </Stack>

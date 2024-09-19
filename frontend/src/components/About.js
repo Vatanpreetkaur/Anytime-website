@@ -280,7 +280,7 @@ export default function AboutUs() {
   <Box mb={4} display="grid" gridTemplateColumns={{ xs: '1fr', md: '1fr 1fr' }} gap={4}>
   {/* Left Column */}
   <Box>
-    <Typography variant="h4" component="h3" align="left" gutterBottom sx={{ background: 'beige' }}>
+    <Typography variant="h4" component="h3" align="left" gutterBottom >
       Why We Stand Out
     </Typography>
 
@@ -322,7 +322,7 @@ export default function AboutUs() {
 
  </Box>
 
- <Typography variant="body1" align="left" maxWidth={'100%'} mt={2} paragraph mt={2}>
+ <Typography variant="body1" align="left" maxWidth={'100%'} mt={2} paragraph >
       At Anytime Dock and Door, we deliver unparalleled repair and maintenance services designed to keep your residential and commercial properties running smoothly. Our company is dedicated to providing swift, high-quality solutions for all your dock and door needs, ensuring minimal disruption to your operations and daily life.
     </Typography>
 

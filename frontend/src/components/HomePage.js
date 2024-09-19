@@ -676,8 +676,8 @@ export default function HomePage() {
             <TopBarContent>
               <Typography variant="h6">24/7</Typography>
               <Box display="flex" alignItems="center">
-                <PhoneNumber>(604) 603 9170</PhoneNumber>
-                <Button variant="contained" color="secondary" href="#quote">
+                <PhoneNumber>+1(604) 603 9170</PhoneNumber>
+                <Button variant="contained" color="secondary" href="/contact">
                   Get a Quote
                 </Button>
               </Box>
