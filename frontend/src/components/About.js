@@ -215,7 +215,7 @@ import React from 'react';
 import { Typography, Box, Grid, Container, Paper } from '@mui/material';
 import { styled } from '@mui/system';
 import { EmojiObjectsOutlined, SecurityOutlined, ThumbUpOutlined, VerifiedUserOutlined, FlashOnOutlined, FavoriteOutlined } from '@mui/icons-material'; // Import icons
-import aboutUsImage from '../assets/anytimeImages/img11.jpeg'
+import aboutUsImage from '../assets/homepage/about.jpeg'
 
 const AboutContainer = styled(Container)({
   padding: '2rem 0',
@@ -266,7 +266,7 @@ const CoreValueItem = styled(Paper) ({
 const IconWrapper = styled(Box) ({
   marginBottom: '1rem',
   fontSize: '2rem',
-  color: '#ac4949 ',  // Use a distinct color for icons
+  color: 'primary ',  // Use a distinct color for icons
 });
 
 export default function AboutUs() {
@@ -286,28 +286,28 @@ export default function AboutUs() {
 
     <Box component="ul" pl={2} sx={{ listStyleType: 'none' }}>
       <Box component="li" display="flex" alignItems="center" mb={3} sx={{ marginLeft: 2 }}>
-        <FlashOnOutlined sx={{ mr: 1, color: '#ac4949',fontSize: '60px' }} />
+        <FlashOnOutlined sx={{ mr: 1, color: 'primary',fontSize: '60px' }} />
         <Typography variant="body1">
           <strong>24/7 Availability:</strong> We offer around-the-clock emergency services, ensuring you have immediate access to expert help whenever you need it.
         </Typography>
       </Box>
 
       <Box component="li" display="flex" alignItems="center" mb={3} sx={{ marginLeft: 2 }}>
-        <VerifiedUserOutlined sx={{ mr: 1,color: '#ac4949',fontSize: '60px' }} />
+        <VerifiedUserOutlined sx={{ mr: 1,color: 'primary',fontSize: '60px' }} />
         <Typography variant="body1">
           <strong>Highly Skilled Professionals:</strong> Our team consists of certified technicians with extensive experience in both residential and commercial systems, guaranteeing precision and reliability in every job.
         </Typography>
       </Box>
 
       <Box component="li" display="flex" alignItems="center" mb={3} sx={{ marginLeft: 2 }}>
-        <SecurityOutlined sx={{ mr: 1, color: '#ac4949',fontSize: '60px' }} />
+        <SecurityOutlined sx={{ mr: 1, color: 'primary',fontSize: '60px' }} />
         <Typography variant="body1">
           <strong>Comprehensive Maintenance Programs:</strong> We provide proactive maintenance solutions tailored to your specific requirements, reducing the risk of unexpected issues and extending the lifespan of your equipment.
         </Typography>
       </Box>
 
       <Box component="li" display="flex" alignItems="center" sx={{ marginLeft: 2 }}>
-        <ThumbUpOutlined sx={{ mr: 1, color: '#ac4949',fontSize: '60px' }} />
+        <ThumbUpOutlined sx={{ mr: 1, color: 'primary',fontSize: '60px' }} />
         <Typography variant="body1">
           <strong>Commitment to Excellence:</strong> We pride ourselves on delivering exceptional service with a focus on quality, safety, and customer satisfaction.
         </Typography>
@@ -318,19 +318,20 @@ export default function AboutUs() {
   {/* Right Column */}
   <Box display="flex" flexDirection="column" alignItems="center">
     <img src={aboutUsImage} alt="About Us" style={{ width: '100%', height: '100%', borderRadius: '8px' }} />
+ </Box>
 
-    <Typography variant="body1" align="left" paragraph mt={2}>
+ </Box>
+
+ <Typography variant="body1" align="left" maxWidth={'100%'} mt={2} paragraph mt={2}>
       At Anytime Dock and Door, we deliver unparalleled repair and maintenance services designed to keep your residential and commercial properties running smoothly. Our company is dedicated to providing swift, high-quality solutions for all your dock and door needs, ensuring minimal disruption to your operations and daily life.
     </Typography>
-  </Box>
-</Box>
 
 </AboutContainer>
 
-      <AboutContent maxWidth="xxl">
+      <AboutContent>
         <AboutTitle variant="h4">Our Core Values</AboutTitle>
         
-        <AboutText variant="body1">
+        <AboutText variant="body1" align="left" maxWidth={'100%'} >
           We are a leading provider of professional door and dock services, committed to delivering top-notch solutions for both residential and commercial clients. Our team of skilled professionals brings years of experience and expertise to every project, ensuring that we meet and exceed our customers' expectations.
         </AboutText>
 

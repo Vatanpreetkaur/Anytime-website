@@ -936,7 +936,7 @@ const Services = () => {
         </Box>
       </Modal>
 
-      <Box sx={{ mt: 6, textAlign: 'center' }}>
+      {/* <Box sx={{ mt: 6, textAlign: 'center' }}>
         <img
           src="/path-to-your-image.jpg"
           alt="Service Worker"
@@ -944,9 +944,9 @@ const Services = () => {
           height="300"
           style={{ borderRadius: '12px', boxShadow: '0 10px 15px rgba(0, 0, 0, 0.1)' }}
         />
-      </Box>
+      </Box> */}
       <Box sx={{ mt: 3, textAlign: 'center' }}>
-        <Typography variant="body1" color="textSecondary">
+        <Typography variant="body1" color="textSecondary" textAlign='center' >
           With decades of industry expertise, our dedicated team proudly serves all regions of British Columbia, including Fraser Valley, Abbotsford, Surrey, Vancouver, Langley, Richmond, and West Vancouver.
         </Typography>
         <Typography variant="body1" color="textSecondary" sx={{ mt: 2 }}>

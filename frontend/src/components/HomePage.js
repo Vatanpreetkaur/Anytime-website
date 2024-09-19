@@ -558,7 +558,7 @@
 
 
 import React, { useState, useEffect } from 'react';
-import { Typography, Box, Button, Grid, Container, Toolbar, AppBar } from '@mui/material';
+import { Typography, Box, Button, Grid, Container, Toolbar, AppBar, Link } from '@mui/material';
 import { styled } from '@mui/system';
 import pimg1 from '../assets/homepage/pex1.jpg';
 import pimg2 from '../assets/homepage/pex2.jpg';
@@ -604,6 +604,7 @@ const HeroContainer = styled(Box)(({ backgroundImage }) => ({
   justifyContent: 'center',
   alignItems: 'center',
   boxShadow: 'inset 0 0 0 1000px rgba(0, 0, 0, 0.5)', 
+  
 }));
 
 const HeroText = styled(Typography)({
@@ -670,8 +671,6 @@ export default function HomePage() {
           sx={{
             position: 'sticky !important',
             top: "20px",
-            
-            
           }}
           >
             <TopBarContent>
@@ -688,13 +687,13 @@ export default function HomePage() {
       </TopBar>
 
       <HeroContainer backgroundImage={images[backgroundIndex]}>
-        <HeroText variant="h2" component="h1">
+        <HeroText variant="h2" component="h1" >
           Welcome to Dock & Door Services
         </HeroText>
         <HeroText variant="h5" component="h2" sx={{ marginTop: '1rem' }}>
           Professional Solutions for Residential & Commercial Needs
         </HeroText>
-        <Button variant="contained" sx={{ marginTop: '2rem', background: '#ac4949' }}>
+        <Button variant="contained" href="/about" sx={{ marginTop: '2rem', background: 'primary' }}>
           Learn More
         </Button>
       </HeroContainer>
@@ -749,64 +748,64 @@ export default function HomePage() {
     <Grid container spacing={4}>
       <Grid item xs={12} md={4}>
         <FeatureItem sx={{
-          backgroundColor: '#ac4949',
+          backgroundColor: 'primary',
           padding: '2rem',
-          color: 'white',
+          color: 'black',
           borderRadius: '8px',
           boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
           textAlign: 'center',
           '&:hover': { boxShadow: '0px 6px 15px rgba(0, 0, 0, 0.15)' }
         }}>
-          <ConstructionIcon sx={{ fontSize: 40, color: 'white !important' }} />
+          <ConstructionIcon sx={{ fontSize: 40, color: 'black !important' }} />
           <Typography variant="h6" component="h3" sx={{ marginTop: '1rem', fontWeight: 'bold' }}>
             Installation
           </Typography>
-          <Typography variant="body1" sx={{ marginTop: '0.5rem', color: 'white' }}>
+          <Typography variant="body1" sx={{ marginTop: '0.5rem', color: 'black' }}>
             High-quality installation of doors and docks to meet your needs.
           </Typography>
         </FeatureItem>
       </Grid>
       <Grid item xs={12} md={4}>
         <FeatureItem sx={{
-          backgroundColor: '#ac4949',
+          backgroundColor: 'primary',
           padding: '2rem',
           borderRadius: '8px',
           boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
-          color: 'white',
+          color: 'black',
           textAlign: 'center',
           '&:hover': { boxShadow: '0px 6px 15px rgba(0, 0, 0, 0.15)' }
         }}>
-          <BuildIcon sx={{ fontSize: 40, color: 'white !important' }} />
+          <BuildIcon sx={{ fontSize: 40, color: 'black !important' }} />
           <Typography variant="h6" component="h3" sx={{ marginTop: '1rem', fontWeight: 'bold' }}>
             Repair
           </Typography>
-          <Typography variant="body1" sx={{ marginTop: '0.5rem', color: 'white' }}>
+          <Typography variant="body1" sx={{ marginTop: '0.5rem', color: 'black' }}>
             Expert repair services to keep your doors and docks in top condition.
           </Typography>
         </FeatureItem>
       </Grid>
       <Grid item xs={12} md={4}>
         <FeatureItem sx={{
-          backgroundColor: '#ac4949',
+          backgroundColor: 'primary',
           padding: '2rem',
-          color: 'white',
+          color: 'black',
           borderRadius: '8px',
           boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
           textAlign: 'center',
           '&:hover': { boxShadow: '0px 6px 15px rgba(0, 0, 0, 0.15)' }
         }}>
-          <SettingsIcon   sx={{ fontSize: 40, color: 'white !important' }} />
-          <Typography variant="h6" component="h3" sx={{ marginTop: '1rem', fontWeight: 'bold', color: 'white', }}>
+          <SettingsIcon   sx={{ fontSize: 40, color: 'black !important' }} />
+          <Typography variant="h6" component="h3" sx={{ marginTop: '1rem', fontWeight: 'bold', color: 'black', }}>
             Maintenance
           </Typography>
-          <Typography variant="body1" sx={{ marginTop: '0.5rem', color: '#666', color: 'white', }}>
+          <Typography variant="body1" sx={{ marginTop: '0.5rem', color: '#666', color: 'black', }}>
             Regular maintenance to ensure the longevity and safety of your installations.
           </Typography>
         </FeatureItem>
       </Grid>
     </Grid>
     <Box sx={{ textAlign: 'center', marginTop: '2rem' }}>
-      <Button variant="contained" backgroundColor ="#ac4949 !important" href="/services">
+      <Button variant="contained" backgroundColor ="primary !important" href="/services">
         Learn More
       </Button>
     </Box>
@@ -860,7 +859,7 @@ export default function HomePage() {
           </Grid>
         </Box> */}
 
-        <Box sx={{ padding: '4rem 0' }}>
+        {/* <Box sx={{ padding: '4rem 0' }}>
           <Typography variant="h4" component="h2" align="center" gutterBottom>
             Contact Us
           </Typography>
@@ -893,7 +892,25 @@ export default function HomePage() {
               </ContactForm>
             </Grid>
           </Grid>
-        </Box>
+        </Box> */}
+
+<Box sx={{ padding: '4rem 0', textAlign: 'center' }}>
+      <Typography variant="h4" component="h2" gutterBottom>
+        Contact Us
+      </Typography>
+      <Typography variant="body1" sx={{ marginBottom: '2rem' }}>
+        If you have any questions or need a quote, feel free to contact us. Our team is here to assist you with all your door and dock service needs.
+      </Typography>
+      <Button
+        component={Link}
+        to="/contact"
+        variant="contained"
+        color="primary"
+        href='/contact'
+      >
+        Go to Contact Page
+      </Button>
+    </Box>
       </Container>
     </>
   );
