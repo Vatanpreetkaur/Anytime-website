@@ -1,8 +1,9 @@
 // src/components/Footer.js
 import React from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, } from '@mui/material';
 
 const Footer = () => (
+  <>
   <Box mt={5} bgcolor="text.secondary" color="white" p={2} textAlign="center">
     <Typography variant="body1">
       &copy; {new Date().getFullYear()} Dock & Door Company. All rights reserved.
@@ -14,6 +15,9 @@ const Footer = () => (
       Phone: 6043639263
     </Typography>
   </Box>
+  
+  
+  </>
 );
 
 export default Footer;

@@ -623,7 +623,6 @@ const FeatureItem = styled(Box)({
   '& .MuiSvgIcon-root': {
     fontSize: '3rem',
     marginBottom: '0.5rem',
-    color: '#1976d2',
   },
 });
 
@@ -663,13 +662,22 @@ export default function HomePage() {
 
   return (
     <>
-      <TopBar position="static">
+      <TopBar sx={{
+    position: 'relative',  // or just remove position entirely
+  }}>
         <Container maxWidth="lg">
-          <Toolbar disableGutters>
+          <Toolbar disableGutters
+          sx={{
+            position: 'sticky !important',
+            top: "20px",
+            
+            
+          }}
+          >
             <TopBarContent>
-              <Typography variant="h6">Dock & Door Services</Typography>
+              <Typography variant="h6">24/7</Typography>
               <Box display="flex" alignItems="center">
-                <PhoneNumber>(123) 456-7890</PhoneNumber>
+                <PhoneNumber>(604) 603 9170</PhoneNumber>
                 <Button variant="contained" color="secondary" href="#quote">
                   Get a Quote
                 </Button>
@@ -686,7 +694,7 @@ export default function HomePage() {
         <HeroText variant="h5" component="h2" sx={{ marginTop: '1rem' }}>
           Professional Solutions for Residential & Commercial Needs
         </HeroText>
-        <Button variant="contained" color="primary" sx={{ marginTop: '2rem' }}>
+        <Button variant="contained" sx={{ marginTop: '2rem', background: '#ac4949' }}>
           Learn More
         </Button>
       </HeroContainer>
@@ -741,61 +749,64 @@ export default function HomePage() {
     <Grid container spacing={4}>
       <Grid item xs={12} md={4}>
         <FeatureItem sx={{
-          backgroundColor: '#f9f9f9',
+          backgroundColor: '#ac4949',
           padding: '2rem',
+          color: 'white',
           borderRadius: '8px',
           boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
           textAlign: 'center',
           '&:hover': { boxShadow: '0px 6px 15px rgba(0, 0, 0, 0.15)' }
         }}>
-          <ConstructionIcon sx={{ fontSize: 40, color: '#1976d2' }} />
+          <ConstructionIcon sx={{ fontSize: 40, color: 'white !important' }} />
           <Typography variant="h6" component="h3" sx={{ marginTop: '1rem', fontWeight: 'bold' }}>
             Installation
           </Typography>
-          <Typography variant="body1" sx={{ marginTop: '0.5rem', color: '#666' }}>
+          <Typography variant="body1" sx={{ marginTop: '0.5rem', color: 'white' }}>
             High-quality installation of doors and docks to meet your needs.
           </Typography>
         </FeatureItem>
       </Grid>
       <Grid item xs={12} md={4}>
         <FeatureItem sx={{
-          backgroundColor: '#f9f9f9',
+          backgroundColor: '#ac4949',
           padding: '2rem',
           borderRadius: '8px',
           boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
+          color: 'white',
           textAlign: 'center',
           '&:hover': { boxShadow: '0px 6px 15px rgba(0, 0, 0, 0.15)' }
         }}>
-          <BuildIcon sx={{ fontSize: 40, color: '#1976d2' }} />
+          <BuildIcon sx={{ fontSize: 40, color: 'white !important' }} />
           <Typography variant="h6" component="h3" sx={{ marginTop: '1rem', fontWeight: 'bold' }}>
             Repair
           </Typography>
-          <Typography variant="body1" sx={{ marginTop: '0.5rem', color: '#666' }}>
+          <Typography variant="body1" sx={{ marginTop: '0.5rem', color: 'white' }}>
             Expert repair services to keep your doors and docks in top condition.
           </Typography>
         </FeatureItem>
       </Grid>
       <Grid item xs={12} md={4}>
         <FeatureItem sx={{
-          backgroundColor: '#f9f9f9',
+          backgroundColor: '#ac4949',
           padding: '2rem',
+          color: 'white',
           borderRadius: '8px',
           boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
           textAlign: 'center',
           '&:hover': { boxShadow: '0px 6px 15px rgba(0, 0, 0, 0.15)' }
         }}>
-          <SettingsIcon sx={{ fontSize: 40, color: '#1976d2' }} />
-          <Typography variant="h6" component="h3" sx={{ marginTop: '1rem', fontWeight: 'bold' }}>
+          <SettingsIcon   sx={{ fontSize: 40, color: 'white !important' }} />
+          <Typography variant="h6" component="h3" sx={{ marginTop: '1rem', fontWeight: 'bold', color: 'white', }}>
             Maintenance
           </Typography>
-          <Typography variant="body1" sx={{ marginTop: '0.5rem', color: '#666' }}>
+          <Typography variant="body1" sx={{ marginTop: '0.5rem', color: '#666', color: 'white', }}>
             Regular maintenance to ensure the longevity and safety of your installations.
           </Typography>
         </FeatureItem>
       </Grid>
     </Grid>
     <Box sx={{ textAlign: 'center', marginTop: '2rem' }}>
-      <Button variant="contained" color="primary" href="/services">
+      <Button variant="contained" backgroundColor ="#ac4949 !important" href="/services">
         Learn More
       </Button>
     </Box>

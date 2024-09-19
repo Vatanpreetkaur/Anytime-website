@@ -4,6 +4,7 @@ import { AppBar, Toolbar, Typography, Button, IconButton, Drawer, List, ListItem
 import { styled } from '@mui/system';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
+import logo from '../assets/homepage/anytimelogo.jpeg';
 
 // const TopBar = styled(AppBar)({
 //   backgroundColor: '#000', // You can change this color as needed
@@ -49,12 +50,12 @@ const Header = () => {
 
       <AppBar position="static">
         <Toolbar>
-          <IconButton edge="start" color="inherit" aria-label="menu" onClick={toggleDrawer(true)}>
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" style={{ flexGrow: 1 }}>
-            Anytime Dock & Door Ltd.
-          </Typography>
+          <Box component={Link} to="/" sx={{ flexGrow: 1, display: 'flex', alignItems: 'center', textDecoration: 'none', color: 'inherit' }}>
+            <img src={logo} alt="Anytime Dock & Door Ltd." style={{ height: '40px', marginRight: '10px', borderRadius: '20px'}} />
+            <Typography variant="h6">
+              Anytime Dock & Door Ltd.
+            </Typography>
+          </Box>
           {/* <Button color="inherit" sx={{display:{xs:'none' ,sm:"block"}}} component={Link} to="/">Home</Button>
           <Button color="inherit" sx={{display:{xs:'none' ,sm:"block"}}}component={Link} to="/about">About</Button>
           <Button color="inherit"sx={{display:{xs:'none' ,sm:"block"}}} component={Link} to="/services">Services</Button>

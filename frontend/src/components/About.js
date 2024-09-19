@@ -215,7 +215,7 @@ import React from 'react';
 import { Typography, Box, Grid, Container, Paper } from '@mui/material';
 import { styled } from '@mui/system';
 import { EmojiObjectsOutlined, SecurityOutlined, ThumbUpOutlined, VerifiedUserOutlined, FlashOnOutlined, FavoriteOutlined } from '@mui/icons-material'; // Import icons
-import aboutUsImage from '../assets/anytimeImages/aboutus.svg'
+import aboutUsImage from '../assets/anytimeImages/img11.jpeg'
 
 const AboutContainer = styled(Container)({
   padding: '2rem 0',
@@ -266,7 +266,7 @@ const CoreValueItem = styled(Paper) ({
 const IconWrapper = styled(Box) ({
   marginBottom: '1rem',
   fontSize: '2rem',
-  color: '#ff6b35',  // Use a distinct color for icons
+  color: '#ac4949 ',  // Use a distinct color for icons
 });
 
 export default function AboutUs() {
@@ -286,28 +286,28 @@ export default function AboutUs() {
 
     <Box component="ul" pl={2} sx={{ listStyleType: 'none' }}>
       <Box component="li" display="flex" alignItems="center" mb={3} sx={{ marginLeft: 2 }}>
-        <FlashOnOutlined sx={{ mr: 1, color: '#ff6b35' }} />
+        <FlashOnOutlined sx={{ mr: 1, color: '#ac4949',fontSize: '60px' }} />
         <Typography variant="body1">
           <strong>24/7 Availability:</strong> We offer around-the-clock emergency services, ensuring you have immediate access to expert help whenever you need it.
         </Typography>
       </Box>
 
       <Box component="li" display="flex" alignItems="center" mb={3} sx={{ marginLeft: 2 }}>
-        <VerifiedUserOutlined sx={{ mr: 1, color: '#ff6b35' }} />
+        <VerifiedUserOutlined sx={{ mr: 1,color: '#ac4949',fontSize: '60px' }} />
         <Typography variant="body1">
           <strong>Highly Skilled Professionals:</strong> Our team consists of certified technicians with extensive experience in both residential and commercial systems, guaranteeing precision and reliability in every job.
         </Typography>
       </Box>
 
       <Box component="li" display="flex" alignItems="center" mb={3} sx={{ marginLeft: 2 }}>
-        <SecurityOutlined sx={{ mr: 1, color: '#ff6b35' }} />
+        <SecurityOutlined sx={{ mr: 1, color: '#ac4949',fontSize: '60px' }} />
         <Typography variant="body1">
           <strong>Comprehensive Maintenance Programs:</strong> We provide proactive maintenance solutions tailored to your specific requirements, reducing the risk of unexpected issues and extending the lifespan of your equipment.
         </Typography>
       </Box>
 
       <Box component="li" display="flex" alignItems="center" sx={{ marginLeft: 2 }}>
-        <ThumbUpOutlined sx={{ mr: 1, color: '#ff6b35' }} />
+        <ThumbUpOutlined sx={{ mr: 1, color: '#ac4949',fontSize: '60px' }} />
         <Typography variant="body1">
           <strong>Commitment to Excellence:</strong> We pride ourselves on delivering exceptional service with a focus on quality, safety, and customer satisfaction.
         </Typography>
@@ -337,7 +337,7 @@ export default function AboutUs() {
         <CoreValuesSection container justifyContent="center">
           <Grid item xs={12} md={3}>
             <CoreValueItem>
-              <IconWrapper><SecurityOutlined /></IconWrapper>
+              <IconWrapper><SecurityOutlined sx={{fontSize: '4rem'}}/></IconWrapper>
               <Typography variant="h6">Trust</Typography>
               <Typography variant="body2">
                 We treat our customer and team like family.
@@ -346,7 +346,7 @@ export default function AboutUs() {
           </Grid>
           <Grid item xs={12} md={3}>
             <CoreValueItem>
-              <IconWrapper><VerifiedUserOutlined /></IconWrapper>
+              <IconWrapper><VerifiedUserOutlined sx={{fontSize: '4rem'}}/></IconWrapper>
               <Typography variant="h6">Integrity</Typography>
               <Typography variant="body2">
                 We do it the right way.
@@ -355,7 +355,7 @@ export default function AboutUs() {
           </Grid>
           <Grid item xs={12} md={3}>
             <CoreValueItem>
-              <IconWrapper><ThumbUpOutlined /></IconWrapper>
+              <IconWrapper><ThumbUpOutlined sx={{fontSize: '4rem'}}/></IconWrapper>
               <Typography variant="h6">Accountability</Typography>
               <Typography variant="body2">
                 We keep our promises.
@@ -364,7 +364,7 @@ export default function AboutUs() {
           </Grid>
           <Grid item xs={12} md={3}>
             <CoreValueItem>
-              <IconWrapper><EmojiObjectsOutlined /></IconWrapper>
+              <IconWrapper><EmojiObjectsOutlined  sx={{fontSize: '4rem'}}/></IconWrapper>
               <Typography variant="h6">Pride</Typography>
               <Typography variant="body2">
                 We will not stoop to our competition.
@@ -373,7 +373,7 @@ export default function AboutUs() {
           </Grid>
           <Grid item xs={12} md={3}>
             <CoreValueItem>
-              <IconWrapper><FlashOnOutlined /></IconWrapper>
+              <IconWrapper><FlashOnOutlined sx={{fontSize: '4rem'}} /></IconWrapper>
               <Typography variant="h6">Boldness</Typography>
               <Typography variant="body2">
                 Never be afraid to stand up when it's needed.
@@ -382,7 +382,7 @@ export default function AboutUs() {
           </Grid>
           <Grid item xs={12} md={3}>
             <CoreValueItem>
-              <IconWrapper><FavoriteOutlined /></IconWrapper>
+              <IconWrapper><FavoriteOutlined sx={{fontSize: '4rem'}} /></IconWrapper>
               <Typography variant="h6">Passion</Typography>
               <Typography variant="body2">
                 We want the ball.
