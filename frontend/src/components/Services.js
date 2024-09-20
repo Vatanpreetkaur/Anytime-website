@@ -798,7 +798,7 @@ const Services = () => {
 
   return (
     <Box sx={{ maxWidth: 1200, mx: 'auto', p: 3 }}>
-      <Typography variant="h4" align="center" gutterBottom>
+      <Typography variant="h3" align="center" gutterBottom sx={{fontWeight: "bold", mb:'2rem'}}>
         Our Services
       </Typography>
       <Grid container spacing={3}>
@@ -854,7 +854,7 @@ const Services = () => {
         ))}
       </Grid>
       <Box sx={{ maxWidth: 1200, mx: 'auto', p: 3 }}>
-        <Typography variant="h4" align="center" gutterBottom>
+        <Typography variant="h3" align="center" gutterBottom sx={{fontWeight: "bold", mb:'4rem' , mt: '2rem'}}>
           Our Work
         </Typography>
         <Grid container spacing={3}>

@@ -45,7 +45,7 @@ const Footer = () => (
         Email: Anytimedockdoor@gmail.com
       </Typography>
       <Typography variant="body2" mb={2}>
-        Phone: 604-363-9263
+        Phone: +1(604) 603 9170
       </Typography>
 
       {/* Social Media Icons */}
@@ -59,7 +59,7 @@ const Footer = () => (
         <IconButton href="mailto:anytimedockanddoor@gmail.com" aria-label="Email">
           <EmailIcon sx={{ color: 'white' }} />
         </IconButton>
-        <IconButton href="tel:+16043639263" aria-label="Phone">
+        <IconButton href="tel:+1(604)6039170" aria-label="Phone">
           <PhoneIcon sx={{ color: 'white' }} />
         </IconButton>
       </Stack>

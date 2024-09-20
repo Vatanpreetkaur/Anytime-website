@@ -583,7 +583,9 @@ const TopBarContent = styled(Box)({
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',
-  width: '100%',
+  minWidth: '100%',
+  
+  
 });
 
 const PhoneNumber = styled(Typography)({
@@ -629,27 +631,15 @@ const FeatureItem = styled(Box)({
 
 const AboutUsSection = styled(Box)({
   padding: '4rem 0',
-  backgroundColor: '#f5f5f5',
+  margin: "2rem",
+  marginTop: '6rem',
+
+  // backgroundColor: '#f5f5f5',
+  backgroundColor: 'rgba(0, 0, 0, 0.9)',
+  color: 'white',
 });
 
-const TestimonialCard = styled(Box)({
-  padding: '2rem',
-  backgroundColor: '#fff',
-  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-  borderRadius: '8px',
-});
 
-const ContactForm = styled('form')({
-  display: 'flex',
-  flexDirection: 'column',
-  gap: '1rem',
-  '& input, & textarea': {
-    width: '100%',
-    padding: '0.5rem',
-    borderRadius: '4px',
-    border: '1px solid #ccc',
-  },
-});
 
 export default function HomePage() {
   const [backgroundIndex, setBackgroundIndex] = useState(0);
@@ -674,9 +664,18 @@ export default function HomePage() {
           }}
           >
             <TopBarContent>
-              <Typography variant="h6">24/7</Typography>
+              <Typography variant="h6" 
+               sx={{
+                backgroundColor: 'white',
+                color: 'black',
+                borderRadius: '4px',
+                padding: '0.1rem 1rem'
+              }}>24/7</Typography>
               <Box display="flex" alignItems="center">
-                <PhoneNumber>+1(604) 603 9170</PhoneNumber>
+                <PhoneNumber  sx={{ 
+    display: { xs: 'none', sm: 'block' }, // Smaller on mobile, larger on bigger screens
+     // Lighter weight on mobile
+  }}>+1(604) 603 9170</PhoneNumber>
                 <Button variant="contained" color="secondary" href="/contact">
                   Get a Quote
                 </Button>
@@ -687,16 +686,49 @@ export default function HomePage() {
       </TopBar>
 
       <HeroContainer backgroundImage={images[backgroundIndex]}>
-        <HeroText variant="h2" component="h1" >
+        {/* <HeroText variant="h2" component="h1" >
           Welcome to Dock & Door Services
         </HeroText>
         <HeroText variant="h5" component="h2" sx={{ marginTop: '1rem' }}>
           Professional Solutions for Residential & Commercial Needs
-        </HeroText>
+        </HeroText> */}
+        <HeroText 
+  variant="h2" 
+  component="h1" 
+  sx={{ 
+    fontSize: { xs: '1.5rem', sm: '3rem' }, // Smaller on mobile, larger on bigger screens
+    fontWeight: { xs: '300', sm: '400' } // Lighter weight on mobile
+  }}
+>
+  Welcome to Dock & Door Services
+</HeroText>
+
+<HeroText 
+  variant="h5" 
+  component="h2" 
+  sx={{ 
+    marginTop: '1rem', 
+    fontSize: { xs: '1rem', sm: '1.5rem' }, // Smaller text for subheading on mobile
+    fontWeight: { xs: '300', sm: '400' } // Lighter weight on mobile
+  }}
+>
+  Professional Solutions for Residential & Commercial Needs
+</HeroText>
+
         <Button variant="contained" href="/about" sx={{ marginTop: '2rem', background: 'primary' }}>
           Learn More
         </Button>
       </HeroContainer>
+
+      <AboutUsSection>
+          <Typography variant="h4" component="h2" align="center" gutterBottom fontWeight= 'bold'>
+            About Us
+          </Typography>
+          <Typography variant="body1" sx={{ padding: '2rem', lineHeight: '1.6' }}>
+            We are a dedicated team providing top-notch door and dock services. Our commitment to quality and customer satisfaction sets us apart. With years of experience and a focus on safety and efficiency, we ensure that every project is completed to the highest standard.
+          </Typography>
+          
+        </AboutUsSection>
 
        <Container maxWidth="lg">
         {/*}
@@ -812,14 +844,7 @@ export default function HomePage() {
   </FeaturesSection>
 
 
-        <AboutUsSection>
-          <Typography variant="h4" component="h2" align="center" gutterBottom>
-            About Us
-          </Typography>
-          <Typography variant="body1" sx={{ padding: '2rem', lineHeight: '1.6' }}>
-            We are a dedicated team providing top-notch door and dock services. Our commitment to quality and customer satisfaction sets us apart. With years of experience and a focus on safety and efficiency, we ensure that every project is completed to the highest standard.
-          </Typography>
-        </AboutUsSection>
+  
 
         {/* <Box sx={{ padding: '4rem 0' }}>
           <Typography variant="h4" component="h2" align="center" gutterBottom>
@@ -895,7 +920,7 @@ export default function HomePage() {
         </Box> */}
 
 <Box sx={{ padding: '4rem 0', textAlign: 'center' }}>
-      <Typography variant="h4" component="h2" gutterBottom>
+      <Typography variant="h4" component="h2" gutterBottom fontWeight='bold'>
         Contact Us
       </Typography>
       <Typography variant="body1" sx={{ marginBottom: '2rem' }}>
@@ -908,7 +933,7 @@ export default function HomePage() {
         color="primary"
         href='/contact'
       >
-        Go to Contact Page
+        Contact
       </Button>
     </Box>
       </Container>
