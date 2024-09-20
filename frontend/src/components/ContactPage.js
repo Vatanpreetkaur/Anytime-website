@@ -97,7 +97,7 @@ const Contact = () => {
               <input type="hidden" name="form-name" value="contact" />
               <StyledTextField
                 label="Full Name"
-                name="contact_fullname"
+                name="name"
                 value={formik.values.contact_fullname}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -108,7 +108,7 @@ const Contact = () => {
               />
               <StyledTextField
                 label="Email"
-                name="contact_email"
+                name="email"
                 value={formik.values.contact_email}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -120,7 +120,7 @@ const Contact = () => {
               />
               <StyledTextField
                 label="Phone"
-                name="contact_phone"
+                name="phone"
                 value={formik.values.contact_phone}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -131,7 +131,7 @@ const Contact = () => {
               />
               <StyledTextField
                 label="ZIP Code"
-                name="contact_address"
+                name="address"
                 value={formik.values.contact_address}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -145,6 +145,7 @@ const Contact = () => {
                 options={serviceOptions}
                 value={formik.values.contact_type}
                 onInputChange={(event, newValue) => formik.setFieldValue('contact_type', newValue)}
+                name="type"
                 renderInput={(params) => (
                   <StyledTextField
                     {...params}
@@ -159,7 +160,7 @@ const Contact = () => {
               />
               <StyledTextField
                 label="Service Details"
-                name="contact_message"
+                name="message"
                 value={formik.values.contact_message}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
