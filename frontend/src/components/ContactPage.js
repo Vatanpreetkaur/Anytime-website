@@ -93,7 +93,7 @@ const Contact = () => {
             <Typography variant="h6" component="h2" align="center" gutterBottom>
               Fill Out the Form Below
             </Typography>
-            <form noValidate autoComplete="off" onSubmit={formik.handleSubmit}>
+            <form name="contact" method="POST" data-netlify="true">
               <StyledTextField
                 label="Full Name"
                 name="contact_fullname"
