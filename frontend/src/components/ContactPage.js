@@ -94,7 +94,7 @@ const Contact = () => {
               Fill Out the Form Below
             </Typography>
             <form name="contact" data-netlify="true">
-              <input type="hidden" name="contact" value="contact" />
+              <input type="hidden" name="form-name" value="contact" />
               <StyledTextField
                 label="Full Name"
                 name="contact_fullname"
