@@ -225,7 +225,7 @@ const AboutContainer = styled(Container)({
 
 const AboutSection = styled(Box) ({
   backgroundColor: 'white',
-  padding: '4rem 0',
+  padding: '1rem 0',
 });
 
 const AboutContent = styled(Container)({
@@ -273,14 +273,14 @@ export default function AboutUs() {
   return (
     <AboutSection>
       <AboutContainer>
-  <Typography variant="h" component="h1" align="center" gutterBottom sx={{fontWeight: "bold"}}>
+  <Typography variant="h3" component="h1" align="center" gutterBottom sx={{fontWeight: "bold", mb:'4rem'}}>
     About Us
   </Typography>
   
   <Box mb={4} display="grid" gridTemplateColumns={{ xs: '1fr', md: '1fr 1fr' }} gap={4}>
   {/* Left Column */}
   <Box>
-    <Typography variant="h4" component="h3" align="left" gutterBottom >
+    <Typography variant="h4" component="h3" align="center" mb='4' gutterBottom sx={{fontWeight: "bold"}} >
       Why We Stand Out
     </Typography>
 
