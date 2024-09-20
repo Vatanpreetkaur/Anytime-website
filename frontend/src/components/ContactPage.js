@@ -144,13 +144,13 @@ const Contact = () => {
                 freeSolo
                 options={serviceOptions}
                 value={formik.values.contact_type}
-                name="contact_type"
                 onInputChange={(event, newValue) => formik.setFieldValue('contact_type', newValue)}
                 renderInput={(params) => (
                   <StyledTextField
                     {...params}
                     label="Service Type"
                     variant="outlined"
+                    name="contact_type"
                     placeholder={formik.values.contact_type === "Other" ? "Enter Your Service Type Here" : "Choose Service"}
                     error={formik.touched.contact_type && Boolean(formik.errors.contact_type)}
                     helperText={formik.touched.contact_type && formik.errors.contact_type}
