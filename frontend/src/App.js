@@ -13,18 +13,20 @@ import About from './components/About';
 
 const App = () => (
   <Router>
-    
+
     <Header />
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/contact" element={<ContactPage />}
-       /> {/* Use the correct component */}
-      
+      /> {/* Use the correct component */}
+
       <Route path="/about" element={<About />} />
       <Route path="/services" element={<Services />} />
+
+      <Route path="/*" element={<HomePage />} />
     </Routes>
     <Footer />
-   
+
   </Router>
 );
 
