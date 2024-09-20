@@ -5,7 +5,7 @@
 
 // const HomePage = () => (
 //   <Container>
-    
+
 //     hi
 //     <Box my={4}>
 //       <Typography variant="h2" component="h1" gutterBottom>
@@ -355,7 +355,7 @@
 //   return (
 //     <>
 //       {/* Hero Section */}
-      
+
 //       <HeroContainer backgroundImage={images[backgroundIndex]}>
 //         <Typography variant="h3" component="h" gutterBottom sx={{background: 'rgba(0, 0, 0, 0.8)', padding: '1rem', borderRadius: '8px'}}>
 //           Professional Door and Dock Services
@@ -584,8 +584,8 @@ const TopBarContent = styled(Box)({
   justifyContent: 'space-between',
   alignItems: 'center',
   minWidth: '100%',
-  
-  
+
+
 });
 
 const PhoneNumber = styled(Typography)({
@@ -597,7 +597,7 @@ const HeroContainer = styled(Box)(({ backgroundImage }) => ({
   position: 'relative',
   textAlign: 'center',
   color: 'white',
-  backgroundImage: `url(${backgroundImage})`, 
+  backgroundImage: `url(${backgroundImage})`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   height: '100vh',
@@ -605,8 +605,8 @@ const HeroContainer = styled(Box)(({ backgroundImage }) => ({
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center',
-  boxShadow: 'inset 0 0 0 1000px rgba(0, 0, 0, 0.5)', 
-  
+  boxShadow: 'inset 0 0 0 1000px rgba(0, 0, 0, 0.5)',
+
 }));
 
 const HeroText = styled(Typography)({
@@ -654,28 +654,28 @@ export default function HomePage() {
   return (
     <>
       <TopBar sx={{
-    position: 'relative',  // or just remove position entirely
-  }}>
+        position: 'relative',  // or just remove position entirely
+      }}>
         <Container maxWidth="lg">
           <Toolbar disableGutters
-          sx={{
-            position: 'sticky !important',
-            top: "20px",
-          }}
+            sx={{
+              position: 'sticky !important',
+              top: "20px",
+            }}
           >
             <TopBarContent>
-              <Typography variant="h6" 
-               sx={{
-                backgroundColor: 'white',
-                color: 'black',
-                borderRadius: '4px',
-                padding: '0.1rem 1rem'
-              }}>24/7</Typography>
+              <Typography variant="h6"
+                sx={{
+                  backgroundColor: 'white',
+                  color: 'black',
+                  borderRadius: '4px',
+                  padding: '0.1rem 1rem'
+                }}>24/7</Typography>
               <Box display="flex" alignItems="center">
-                <PhoneNumber  sx={{ 
-    display: { xs: 'none', sm: 'block' }, // Smaller on mobile, larger on bigger screens
-     // Lighter weight on mobile
-  }}>+1(604) 603 9170</PhoneNumber>
+                <PhoneNumber sx={{
+                  display: { xs: 'none', sm: 'block' }, // Smaller on mobile, larger on bigger screens
+                  // Lighter weight on mobile
+                }}>+1(604) 603 9170</PhoneNumber>
                 <Button variant="contained" color="secondary" href="/contact">
                   Get a Quote
                 </Button>
@@ -692,28 +692,28 @@ export default function HomePage() {
         <HeroText variant="h5" component="h2" sx={{ marginTop: '1rem' }}>
           Professional Solutions for Residential & Commercial Needs
         </HeroText> */}
-        <HeroText 
-  variant="h2" 
-  component="h1" 
-  sx={{ 
-    fontSize: { xs: '1.5rem', sm: '3rem' }, // Smaller on mobile, larger on bigger screens
-    fontWeight: { xs: '300', sm: '400' } // Lighter weight on mobile
-  }}
->
-  Welcome to Dock & Door Services
-</HeroText>
+        <HeroText
+          variant="h2"
+          component="h1"
+          sx={{
+            fontSize: { xs: '1.5rem', sm: '3rem' }, // Smaller on mobile, larger on bigger screens
+            fontWeight: { xs: '300', sm: '400' } // Lighter weight on mobile
+          }}
+        >
+          Welcome to Dock & Door Services
+        </HeroText>
 
-<HeroText 
-  variant="h5" 
-  component="h2" 
-  sx={{ 
-    marginTop: '1rem', 
-    fontSize: { xs: '1rem', sm: '1.5rem' }, // Smaller text for subheading on mobile
-    fontWeight: { xs: '300', sm: '400' } // Lighter weight on mobile
-  }}
->
-  Professional Solutions for Residential & Commercial Needs
-</HeroText>
+        <HeroText
+          variant="h5"
+          component="h2"
+          sx={{
+            marginTop: '1rem',
+            fontSize: { xs: '1rem', sm: '1.5rem' }, // Smaller text for subheading on mobile
+            fontWeight: { xs: '300', sm: '400' } // Lighter weight on mobile
+          }}
+        >
+          Professional Solutions for Residential & Commercial Needs
+        </HeroText>
 
         <Button variant="contained" href="/about" sx={{ marginTop: '2rem', background: 'primary' }}>
           Learn More
@@ -721,16 +721,16 @@ export default function HomePage() {
       </HeroContainer>
 
       <AboutUsSection>
-          <Typography variant="h4" component="h2" align="center" gutterBottom fontWeight= 'bold'>
-            About Us
-          </Typography>
-          <Typography variant="body1" sx={{ padding: '2rem', lineHeight: '1.6' }}>
-            We are a dedicated team providing top-notch door and dock services. Our commitment to quality and customer satisfaction sets us apart. With years of experience and a focus on safety and efficiency, we ensure that every project is completed to the highest standard.
-          </Typography>
-          
-        </AboutUsSection>
+        <Typography variant="h4" component="h2" align="center" gutterBottom fontWeight='bold'>
+          About Us
+        </Typography>
+        <Typography variant="body1" sx={{ padding: '2rem', lineHeight: '1.6' }}>
+          We are a dedicated team providing top-notch door and dock services. Our commitment to quality and customer satisfaction sets us apart. With years of experience and a focus on safety and efficiency, we ensure that every project is completed to the highest standard.
+        </Typography>
 
-       <Container maxWidth="lg">
+      </AboutUsSection>
+
+      <Container maxWidth="lg">
         {/*}
         <FeaturesSection>
           <Typography variant="h4" component="h2" align="center" gutterBottom>
@@ -774,77 +774,77 @@ export default function HomePage() {
         </FeaturesSection> 
         */}
         <FeaturesSection>
-    <Typography variant="h4" component="h2" align="center" gutterBottom sx={{ color: '#333', fontWeight: 'bold' }}>
-      Our Services
-    </Typography>
-    <Grid container spacing={4}>
-      <Grid item xs={12} md={4}>
-        <FeatureItem sx={{
-          backgroundColor: 'primary',
-          padding: '2rem',
-          color: 'black',
-          borderRadius: '8px',
-          boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
-          textAlign: 'center',
-          '&:hover': { boxShadow: '0px 6px 15px rgba(0, 0, 0, 0.15)' }
-        }}>
-          <ConstructionIcon sx={{ fontSize: 40, color: 'black !important' }} />
-          <Typography variant="h6" component="h3" sx={{ marginTop: '1rem', fontWeight: 'bold' }}>
-            Installation
+          <Typography variant="h4" component="h2" align="center" gutterBottom sx={{ color: '#333', fontWeight: 'bold' }}>
+            Our Services
           </Typography>
-          <Typography variant="body1" sx={{ marginTop: '0.5rem', color: 'black' }}>
-            High-quality installation of doors and docks to meet your needs.
-          </Typography>
-        </FeatureItem>
-      </Grid>
-      <Grid item xs={12} md={4}>
-        <FeatureItem sx={{
-          backgroundColor: 'primary',
-          padding: '2rem',
-          borderRadius: '8px',
-          boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
-          color: 'black',
-          textAlign: 'center',
-          '&:hover': { boxShadow: '0px 6px 15px rgba(0, 0, 0, 0.15)' }
-        }}>
-          <BuildIcon sx={{ fontSize: 40, color: 'black !important' }} />
-          <Typography variant="h6" component="h3" sx={{ marginTop: '1rem', fontWeight: 'bold' }}>
-            Repair
-          </Typography>
-          <Typography variant="body1" sx={{ marginTop: '0.5rem', color: 'black' }}>
-            Expert repair services to keep your doors and docks in top condition.
-          </Typography>
-        </FeatureItem>
-      </Grid>
-      <Grid item xs={12} md={4}>
-        <FeatureItem sx={{
-          backgroundColor: 'primary',
-          padding: '2rem',
-          color: 'black',
-          borderRadius: '8px',
-          boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
-          textAlign: 'center',
-          '&:hover': { boxShadow: '0px 6px 15px rgba(0, 0, 0, 0.15)' }
-        }}>
-          <SettingsIcon   sx={{ fontSize: 40, color: 'black !important' }} />
-          <Typography variant="h6" component="h3" sx={{ marginTop: '1rem', fontWeight: 'bold', color: 'black', }}>
-            Maintenance
-          </Typography>
-          <Typography variant="body1" sx={{ marginTop: '0.5rem', color: '#666', color: 'black', }}>
-            Regular maintenance to ensure the longevity and safety of your installations.
-          </Typography>
-        </FeatureItem>
-      </Grid>
-    </Grid>
-    <Box sx={{ textAlign: 'center', marginTop: '2rem' }}>
-      <Button variant="contained" backgroundColor ="primary !important" href="/services">
-        Learn More
-      </Button>
-    </Box>
-  </FeaturesSection>
+          <Grid container spacing={4}>
+            <Grid item xs={12} md={4}>
+              <FeatureItem sx={{
+                backgroundColor: 'primary',
+                padding: '2rem',
+                color: 'black',
+                borderRadius: '8px',
+                boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
+                textAlign: 'center',
+                '&:hover': { boxShadow: '0px 6px 15px rgba(0, 0, 0, 0.15)' }
+              }}>
+                <ConstructionIcon sx={{ fontSize: 40, color: 'black !important' }} />
+                <Typography variant="h6" component="h3" sx={{ marginTop: '1rem', fontWeight: 'bold' }}>
+                  Installation
+                </Typography>
+                <Typography variant="body1" sx={{ marginTop: '0.5rem', color: 'black' }}>
+                  High-quality installation of doors and docks to meet your needs.
+                </Typography>
+              </FeatureItem>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <FeatureItem sx={{
+                backgroundColor: 'primary',
+                padding: '2rem',
+                borderRadius: '8px',
+                boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
+                color: 'black',
+                textAlign: 'center',
+                '&:hover': { boxShadow: '0px 6px 15px rgba(0, 0, 0, 0.15)' }
+              }}>
+                <BuildIcon sx={{ fontSize: 40, color: 'black !important' }} />
+                <Typography variant="h6" component="h3" sx={{ marginTop: '1rem', fontWeight: 'bold' }}>
+                  Repair
+                </Typography>
+                <Typography variant="body1" sx={{ marginTop: '0.5rem', color: 'black' }}>
+                  Expert repair services to keep your doors and docks in top condition.
+                </Typography>
+              </FeatureItem>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <FeatureItem sx={{
+                backgroundColor: 'primary',
+                padding: '2rem',
+                color: 'black',
+                borderRadius: '8px',
+                boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
+                textAlign: 'center',
+                '&:hover': { boxShadow: '0px 6px 15px rgba(0, 0, 0, 0.15)' }
+              }}>
+                <SettingsIcon sx={{ fontSize: 40, color: 'black !important' }} />
+                <Typography variant="h6" component="h3" sx={{ marginTop: '1rem', fontWeight: 'bold', color: 'black', }}>
+                  Maintenance
+                </Typography>
+                <Typography variant="body1" sx={{ marginTop: '0.5rem', color: 'black', }}>
+                  Regular maintenance to ensure the longevity and safety of your installations.
+                </Typography>
+              </FeatureItem>
+            </Grid>
+          </Grid>
+          <Box sx={{ textAlign: 'center', marginTop: '2rem' }}>
+            <Button variant="contained" backgroundColor="primary !important" href="/services">
+              Learn More
+            </Button>
+          </Box>
+        </FeaturesSection>
 
 
-  
+
 
         {/* <Box sx={{ padding: '4rem 0' }}>
           <Typography variant="h4" component="h2" align="center" gutterBottom>
@@ -919,23 +919,23 @@ export default function HomePage() {
           </Grid>
         </Box> */}
 
-<Box sx={{ padding: '4rem 0', textAlign: 'center' }}>
-      <Typography variant="h4" component="h2" gutterBottom fontWeight='bold'>
-        Contact Us
-      </Typography>
-      <Typography variant="body1" sx={{ marginBottom: '2rem' }}>
-        If you have any questions or need a quote, feel free to contact us. Our team is here to assist you with all your door and dock service needs.
-      </Typography>
-      <Button
-        component={Link}
-        to="/contact"
-        variant="contained"
-        color="primary"
-        href='/contact'
-      >
-        Contact
-      </Button>
-    </Box>
+        <Box sx={{ padding: '4rem 0', textAlign: 'center' }}>
+          <Typography variant="h4" component="h2" gutterBottom fontWeight='bold'>
+            Contact Us
+          </Typography>
+          <Typography variant="body1" sx={{ marginBottom: '2rem' }}>
+            If you have any questions or need a quote, feel free to contact us. Our team is here to assist you with all your door and dock service needs.
+          </Typography>
+          <Button
+            component={Link}
+            to="/contact"
+            variant="contained"
+            color="primary"
+            href='/contact'
+          >
+            Contact
+          </Button>
+        </Box>
       </Container>
     </>
   );
