@@ -93,7 +93,7 @@ const Contact = () => {
             <Typography variant="h6" component="h2" align="center" gutterBottom>
               Fill Out the Form Below
             </Typography>
-            <form name="contact" data-netlify="true">
+            <form action='/' name="contact" data-netlify="true">
               <input type="hidden" name="form-name" value="contact" />
               <StyledTextField
                 label="Full Name"
