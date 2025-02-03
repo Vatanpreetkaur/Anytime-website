@@ -218,9 +218,14 @@ import { EmojiObjectsOutlined, SecurityOutlined, ThumbUpOutlined, VerifiedUserOu
 import aboutUsImage from '../assets/homepage/about.jpeg'
 
 const AboutContainer = styled(Container)({
-  padding: '2rem 0',
+  padding: '1rem 0',
    // Adjusted max width to fit the layout
-  margin: '0 auto',  // Center the content
+  margin: '0 auto', 
+
+  '@media (max-width: 600px)': {
+    padding: '2rem',  // Add 2rem padding on all sides for mobile layout
+  },
+
 });
 
 const AboutSection = styled(Box) ({
@@ -255,12 +260,16 @@ const CoreValuesSection = styled(Grid) ({
 });
 
 const CoreValueItem = styled(Paper) ({
-  padding: '2rem',
+  padding: '1rem',
   backgroundColor: '#f9f9f9',  // Light background for the cards
   color: '#333',
   boxShadow: 'none',  // Remove shadow
   borderRadius: '8px',
   textAlign: 'center',
+
+  '@media (max-width: 600px)': {
+    padding: '1rem',  // Add 2rem padding on all sides for mobile layout
+  },
 });
 
 const IconWrapper = styled(Box) ({

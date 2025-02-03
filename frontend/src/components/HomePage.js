@@ -635,8 +635,8 @@ const AboutUsSection = styled(Box)({
   marginTop: '6rem',
 
   // backgroundColor: '#f5f5f5',
-  backgroundColor: 'rgba(0, 0, 0, 0.9)',
-  color: 'white',
+  // backgroundColor: 'rgba(0, 0, 0, 0.9)',
+  color: 'black',
 });
 
 
@@ -676,7 +676,7 @@ export default function HomePage() {
                   display: { xs: 'none', sm: 'block' }, // Smaller on mobile, larger on bigger screens
                   // Lighter weight on mobile
                 }}>+1(604) 603 9170</PhoneNumber>
-                <Button variant="contained" color="secondary" href="/contact">
+                <Button variant="contained" color="secondary" href="/contact" >
                   Get a Quote
                 </Button>
               </Box>
@@ -715,7 +715,7 @@ export default function HomePage() {
           Professional Solutions for Residential & Commercial Needs
         </HeroText>
 
-        <Button variant="contained" href="/about" sx={{ marginTop: '2rem', background: 'primary' }}>
+        <Button variant="contained" href="/about" sx={{ marginTop: '2rem', backgroundColor: '#192E4D'}}>
           Learn More
         </Button>
       </HeroContainer>
@@ -837,7 +837,7 @@ export default function HomePage() {
             </Grid>
           </Grid>
           <Box sx={{ textAlign: 'center', marginTop: '2rem' }}>
-            <Button variant="contained" backgroundColor="primary !important" href="/services">
+            <Button variant="contained" href="/services" sx={{backgroundColor: '#192E4D',}}>
               Learn More
             </Button>
           </Box>
@@ -920,7 +920,7 @@ export default function HomePage() {
         </Box> */}
 
         <Box sx={{ padding: '4rem 0', textAlign: 'center' }}>
-          <Typography variant="h4" component="h2" gutterBottom fontWeight='bold'>
+          <Typography variant="h4" component="h2" gutterBottom fontWeight='bold' >
             Contact Us
           </Typography>
           <Typography variant="body1" sx={{ marginBottom: '2rem' }}>
@@ -932,6 +932,7 @@ export default function HomePage() {
             variant="contained"
             color="primary"
             href='/contact'
+            sx={{backgroundColor: '#192E4D',}}
           >
             Contact
           </Button>

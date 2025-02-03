@@ -34,7 +34,7 @@ import PhoneIcon from '@mui/icons-material/Phone';
 
 const Footer = () => (
   <>
-    <Box mt={5} bgcolor="text.secondary" color="white" p={4} textAlign="center">
+    <Box mt={5} bgcolor="#192E4D" color="white" p={4} textAlign="center">
       {/* Company Info */}
       <Typography variant="body1">
         &copy; {new Date().getFullYear()} Dock & Door Company. All rights reserved.
@@ -42,7 +42,7 @@ const Footer = () => (
 
       {/* Contact Info */}
       <Typography variant="body2" mt={1}>
-        Email: Anytimedockdoor@gmail.com
+        Email: contact@anytimedockanddoor.ca
       </Typography>
       <Typography variant="body2" mb={2}>
         Phone: +1(604) 603 9170

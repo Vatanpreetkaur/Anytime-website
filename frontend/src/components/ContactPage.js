@@ -176,7 +176,8 @@ const Contact = () => {
                 color="primary"
                 type="submit"
                 fullWidth
-                sx={{ marginTop: 2 }}
+                sx={{ marginTop: 2 ,
+                  backgroundColor: '#192E4D'}}
               >
                 Submit
               </Button>

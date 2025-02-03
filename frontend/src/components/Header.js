@@ -161,7 +161,7 @@ const Header = () => {
 
     <>
       {/* AppBar with Logo and Menu */}
-      <AppBar position="static">
+      <AppBar position="static"  sx={{ backgroundColor: '#192E4D' }}>
         <Toolbar>
           {/* Mobile: Display Menu Icon */}
           <IconButton
