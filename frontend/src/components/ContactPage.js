@@ -5,6 +5,7 @@ import axios from 'axios';
 import Swal from 'sweetalert2';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import { Helmet } from 'react-helmet-async';
 
 const ContactContainer = styled(Container)(({ theme }) => ({
   padding: theme.spacing(8, 0),
@@ -83,6 +84,24 @@ const Contact = () => {
   });
 
   return (
+    <>
+    <Helmet>
+  <title>Contact Us | Request Service | Anytime Dock & Door Ltd.</title>
+  <meta 
+    name="description" 
+    content="Need garage door repairs, dock equipment service, or security gate installation? Contact Anytime Dock & Door Ltd. today. Serving Fraser Valley, Vancouver, and surrounding areas." 
+  />
+  <meta 
+    name="keywords" 
+    content="Contact Anytime Dock & Door, Garage Door Repair Contact, Request Service, Garage Door Installation, Dock Equipment Repair, Overhead Doors, Security Gates, Commercial Door Services, Fraser Valley, Vancouver, Abbotsford, Surrey, Langley, Richmond, British Columbia" 
+  />
+  <meta property="og:title" content="Contact Us | Request Service | Anytime Dock & Door Ltd." />
+  <meta property="og:description" content="Need expert garage door or dock equipment services? Contact our team today for a free consultation and quote. Fast and reliable service in British Columbia." />
+  <meta property="og:url" content="https://anytimedockanddoor.ca/contact" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://anytimedockanddoor.ca/assets/contact.jpg" />
+  <meta name="author" content="Anytime Dock & Door Ltd." />
+</Helmet>
     <ContactContainer>
       <Typography variant="h4" component="h1" align="center" gutterBottom>
         Request Service
@@ -186,6 +205,7 @@ const Contact = () => {
         </Grid>
       </Grid>
     </ContactContainer>
+    </>
   );
 };
 

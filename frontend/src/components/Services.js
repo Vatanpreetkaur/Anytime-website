@@ -715,6 +715,7 @@ import image8 from '../assets/anytimeImages/img8.jpeg';
 import image9 from '../assets/anytimeImages/img9.jpeg';
 import image10 from '../assets/anytimeImages/img10.jpeg';
 import image11 from '../assets/anytimeImages/img11.jpeg';
+import { Helmet } from 'react-helmet-async';
 
 const services = [
   {
@@ -782,6 +783,20 @@ const workImages = [
   image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11,
 ];
 
+const workImageDescriptions = [
+  "Residential garage door installation",
+  "Glass-paneled garage doors ",
+  "Residential garage door ",
+  "garage doors with classic panel",
+  "Commercial loading dock door",
+  "Industrial garage door with dock seals",
+  "Warehouse-style garage door",
+  "Hydraulic dock leveler ",
+  "modern garage door with frosted glass panels",
+  "industrial garage door in a warehouse ",
+  "dock door with a small window"
+];
+
 const Services = () => {
   const [open, setOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState(null);
@@ -797,6 +812,26 @@ const Services = () => {
   };
 
   return (
+    <>
+
+<Helmet>
+  <title>Expert Dock & Door Services | Installation & Repair | Anytime Dock & Door Ltd.</title>
+  <meta 
+    name="description" 
+    content="Anytime Dock & Door Ltd. offers expert services for residential and commercial garage doors, overhead doors, dock levelers, security gates, and pest control solutions. 24/7 emergency support available." 
+  />
+  <meta 
+    name="keywords" 
+    content="Garage Door Installation, Garage Door Repair, Overhead Doors, Dock Levelers, Dock Repair, Hydraulic Dock Conversions, Vehicle Restraints, Security Gates, Pest Control Services, Commercial Man Doors, Energy Saver Upgrades, Safety Equipment, Emergency Door Repairs, Vancouver, Fraser Valley, Abbotsford, Surrey, Langley, Richmond, West Vancouver" 
+  />
+  <meta property="og:title" content="Expert Dock & Door Services | Installation & Repair | Anytime Dock & Door Ltd." />
+  <meta property="og:description" content="Professional dock and door services, including garage doors, dock levelers, security gates, and pest control. Serving British Columbia with 24/7 emergency support." />
+  <meta property="og:url" content="https://anytimedockanddoor.ca/services" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://anytimedockanddoor.ca/assets/services.jpg" />
+  <meta name="author" content="Anytime Dock & Door Ltd." />
+</Helmet>
+
     <Box sx={{ maxWidth: 1200, mx: 'auto', p: 3 }}>
       <Typography variant="h3" align="center" gutterBottom sx={{fontWeight: "bold", mb:'2rem'}}>
         Our Services
@@ -873,9 +908,13 @@ const Services = () => {
                   }}
                   onClick={() => handleOpen(image)}
                 >
-                  <img
+                  {/* <img
                     src={image}
-                    alt={`Work ${index + 1}`}
+                    alt={`Work ${index + 1}`} */}
+                     <img
+                      src={image}
+                     alt={workImageDescriptions[index] || `Project ${index + 1}`}
+  
                     style={{
                       width: '100%',
                       height: '100%',
@@ -954,6 +993,7 @@ const Services = () => {
         </Typography>
       </Box>
     </Box>
+    </>
   );
 };
 

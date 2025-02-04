@@ -567,6 +567,7 @@ import pimg5 from '../assets/homepage/pex5.jpg';
 import ConstructionIcon from '@mui/icons-material/Construction';
 import BuildIcon from '@mui/icons-material/Build';
 import SettingsIcon from '@mui/icons-material/Settings';
+import { Helmet } from 'react-helmet-async';
 
 // Array of images
 const images = [pimg1, pimg2, pimg3, pimg5];
@@ -653,6 +654,20 @@ export default function HomePage() {
 
   return (
     <>
+     {/* Helmet for SEO */}
+     <Helmet>
+        <title>Home - Anytime Dock & Door</title>
+        <meta name="description" content="Reliable dock and door services for residential and commercial needs. Contact us today!" />
+        <meta name="keywords" content="dock services, door repair, commercial doors, garage doors, industrial dock doors, Garage door repair, overhead door repair, broken door, garage door, dock repair, dock leveler maintenance, garage door spring, broken spring repair, best garage door repair, best dock repair, dock installation, best dock services, best overhead door repair, best dock leveler maintenance, best Hydraulic dock leveler installation, best industrial garage door repair" />
+        <meta property="og:title" content="Home - Anytime Dock & Door" />
+        <meta property="og:description" content="Reliable dock and door services for residential and commercial needs." />
+        <meta property="og:url" content="https://anytimedockanddoor.ca/" />
+        <meta property="og:type" content="website" />
+      </Helmet>
+
+
+
+
       <TopBar sx={{
         position: 'relative',  // or just remove position entirely
       }}>

@@ -216,6 +216,7 @@ import { Typography, Box, Grid, Container, Paper } from '@mui/material';
 import { styled } from '@mui/system';
 import { EmojiObjectsOutlined, SecurityOutlined, ThumbUpOutlined, VerifiedUserOutlined, FlashOnOutlined, FavoriteOutlined } from '@mui/icons-material'; // Import icons
 import aboutUsImage from '../assets/homepage/about.jpeg'
+import { Helmet } from 'react-helmet-async';
 
 const AboutContainer = styled(Container)({
   padding: '1rem 0',
@@ -280,6 +281,19 @@ const IconWrapper = styled(Box) ({
 
 export default function AboutUs() {
   return (
+
+    <>
+      {/* Helmet for SEO */}
+      <Helmet>
+        <title>About Us - Anytime Dock & Door</title>
+        <meta name="description" content="Learn more about Anytime Dock & Door, our commitment to quality service, and why we stand out in the industry." />
+        <meta name="keywords" content="Anytime Dock & Door Ltd., About Us, 24/7 Availability, Dock Repair, Door Maintenance, Highly Skilled Professionals, Comprehensive Maintenance Programs, Commitment to Excellence, Trust, Integrity, Accountability, Pride, Boldness, Passion, Commercial Doors, Residential Garage Doors, Emergency Repair Services" />
+        <meta property="og:title" content="About Us - Anytime Dock & Door" />
+        <meta property="og:description" content="Discover how Anytime Dock & Door provides high-quality repair and maintenance services for residential and commercial clients." />
+        <meta property="og:url" content="https://anytimedockanddoor.ca/about" />
+        <meta property="og:type" content="website" />
+      </Helmet>
+
     <AboutSection>
       <AboutContainer>
   <Typography variant="h3" component="h1" align="center" gutterBottom sx={{fontWeight: "bold", mb:'4rem'}}>
@@ -405,6 +419,7 @@ export default function AboutUs() {
     </Typography>
       </AboutContent>
     </AboutSection>
+    </>
   );
 }
 
